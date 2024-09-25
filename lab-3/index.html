@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>My Website with Silkscreen Font</title>
+    <style>
+        /* Importing Silkscreen font from Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+        body {
+            font-family: "Silkscreen", sans-serif;
+            font-weight: 400;
+        }
+
+        h1 {
+            font-weight: 700; /* Bold weight for headings */
+        }
+
+        p {
+            font-weight: 400; /* Regular weight for paragraph text */
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Silkscreen-Themed Website!</h1>
+    <p>
+        The "Silkscreen" typeface is imported from Google Fonts into the style tag of the above HTML example, allowing it to be utilized on the page through the use of the @import rule. The regular (400) and bold (700) weights of the font are retrieved by the browser when it encounters the URL https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap. Cursive is used as a fallback font for browsers that may not support the "Silkscreen" font, which is applied to all text in the document body using the font-family attribute in the CSS. By creating a distinctive and lively typography that sticks out, this technique improves the website's visual appeal.
+         Furthermore, the example incorporates basic styling for the text color, background, and alignment to produce an aesthetically pleasing layout, and the footer uses JavaScript to dynamically display the most recent update date. By combining these methods, a webpage that is both fashionable and educational can effectively make use of bespoke fonts.
+        </p>
+
+        <footer>
+            <p>Last updated: 
+                <span id="lastModified"></span>
+            </p>
+        </footer>
+        <script type="text/javascript">
+             var x = document.lastModified;
+             document.getElementById('lastModified').textContent = x;
+        </script>
+</body>
+</html>
