@@ -10,9 +10,33 @@
   <header>
     <h1>Demon Slayer: Choose Your Path</h1>
   </header>
+  
+  <!-- Story and Choices Section -->
   <div id="story"></div>
   <div id="choices"></div>
   <img id="story-image" src="" alt="Story Image">
+  
+  <!-- Addendum Section -->
+  <section id="addendum">
+    <h2>Project Addendum</h2>
+    <p><strong>Story Planning:</strong> The planning process involved creating a flowchart to map out each decision and path leading to different endings. This helped ensure all choices connected logically, creating an immersive experience.</p>
+    
+    <p><strong>Creative Choices:</strong> Inspired by the “Demon Slayer” universe, the game includes settings like forests, rivers, and ancient temples, adding to the atmosphere. Each path aligns with a “Demon Slayer” theme, such as bravery, teamwork, or stealth.</p>
+    
+    <p><strong>Challenges Faced:</strong> One of the main challenges was keeping the branching paths coherent while maintaining excitement in each choice. Debugging each choice button was essential to ensure players reached the intended ending.</p>
+    
+    <p><strong>Insights Gained:</strong> This project provided insights into DOM manipulation, event handling, and debugging, especially in JavaScript. Creating the interactive user experience reinforced problem-solving skills.</p>
+  </section>
+  
   <script src="script.js"></script>
+   <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
 </body>
 </html>
