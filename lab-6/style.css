@@ -1,0 +1,83 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body uses CSS Grid for the Holy Grail Layout */
+body {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav content aside"
+        "footer footer footer";
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr 3fr 1fr;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for each layout section */
+header {
+    grid-area: header;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: left;
+}
+
+main {
+    grid-area: content;
+    padding: 20px;
+    background-color: #fff;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Styling for the navigation links */
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        grid-template-areas:
+            "header"
+            "nav"
+            "content"
+            "aside"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+}
