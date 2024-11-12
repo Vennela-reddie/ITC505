@@ -17,4 +17,20 @@ body {
     font-size: 16px;
     cursor: pointer;
   }
+#addendum {
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  padding: 20px;
+  margin-top: 30px;
+  border-top: 2px solid #444;
+}
+
+#addendum h2 {
+  color: #f5a623;
+}
+
+#addendum p {
+  line-height: 1.6;
+}
+
   
