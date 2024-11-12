@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Grail Layout Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+
+    <!-- Left Sidebar (Navigation) -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- JavaScript functionality will go here -->
+        <h2>Interactive Bubble Sort</h2>
+        <p>Enter numbers separated by commas:</p>
+        <input type="text" id="numberInput" placeholder="e.g., 3,5,1,6">
+        <button onclick="sortArray()">Sort Array</button>
+        <p>Sorted Output: <span id="sortedOutput"></span></p>
+    </main>
+    <!-- Right Sidebar (Advertisement) -->
+    <aside>
+        <a href="https://www.amazon.com" target="_blank">
+            <img src="add.jpg" alt="Amazon Advertisement" style="width:100%;">
+        </a>
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+        <p>Last Modified: <span id="lastModified"></span></p>
+        <p>Addendum: This JavaScript code demonstrates a simple bubble sort algorithm on a fixed array of integers.</p>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
