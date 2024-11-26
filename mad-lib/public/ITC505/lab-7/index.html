@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Themed Mad Lib</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f8ff;
+      color: #333;
+      text-align: center;
+      padding: 40px;
+      margin: 0;
+    }
+
+    h1 {
+      color: #ff69b4;
+      font-size: 36px;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    /* Form Styles */
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      display: inline-block;
+      max-width: 500px;
+      width: 100%;
+      margin-top: 20px;
+      border: 2px solid #ff69b4;
+    }
+
+    label {
+      font-size: 18px;
+      color: #6a0dad;
+      font-weight: bold;
+      margin: 10px 0 5px;
+      display: block;
+    }
+
+    input {
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 15px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ff69b4;
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus {
+      border-color: #ff1493;
+      outline: none;
+    }
+
+    button {
+      background-color: #ff1493;
+      color: white;
+      font-size: 18px;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #c71585;
+    }
+
+    button:active {
+      background-color: #d96cbb;
+    }
+
+    /* Footer Styles */
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #888;
+    }
+
+    footer span {
+      color: #ff69b4;
+    }
+
+    /* Animation Styles */
+    @keyframes glow {
+      0% { text-shadow: 0 0 5px #ff69b4, 0 0 10px #ff69b4, 0 0 15px #ff69b4; }
+      50% { text-shadow: 0 0 5px #ff1493, 0 0 10px #ff1493, 0 0 15px #ff1493; }
+      100% { text-shadow: 0 0 5px #ff69b4, 0 0 10px #ff69b4, 0 0 15px #ff69b4; }
+    }
+
+    h1 {
+      animation: glow 1.5s ease-in-out infinite;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Fill in the blanks to create your own Anime Adventure!</h1>
+  
+  <form action="/ITC505/lab-7/index.html" method="POST">
+    <label for="animeCharacter">Anime Character Name:</label>
+    <input type="text" id="animeCharacter" name="animeCharacter" required><br><br>
+    
+    <label for="power">Superpower:</label>
+    <input type="text" id="power" name="power" required><br><br>
+    
+    <label for="adjective">Adjective (to describe villain):</label>
+    <input type="text" id="adjective" name="adjective" required><br><br>
+    
+    <label for="city">City in Anime World:</label>
+    <input type="text" id="city" name="city" required><br><br>
+    
+    <label for="villain">Villain's Name:</label>
+    <input type="text" id="villain" name="villain" required><br><br>
+    
+    <button type="submit">Submit Mad Lib</button>
+  </form>
+
+  <footer>
+    <p>Last updated: <span id="lastModified"></span></p>
+  </footer>
+  
+  <script type="text/javascript">
+    var x = document.lastModified;
+    document.getElementById('lastModified').textContent = x;
+  </script>
+</body>
+</html>
