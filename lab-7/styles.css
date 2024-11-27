@@ -1,0 +1,87 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Header Styles */
+h1 {
+  color: #007bff;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+form {
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 1em;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button Styles */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  background-color: #003f7f;
+}
+
+/* Footer Styles */
+footer {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+footer span {
+  color: #007bff;
+}
