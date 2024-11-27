@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mad Lib Adventure</title>
+  <link rel="stylesheet" href="/ITC505/lab-7/styles.css">
+</head>
+<body>
+  <h1>Welcome to the Mad Lib Adventure!</h1>
+  
+  <form action="/ITC505/lab-7/submit" method="POST">
+    <label for="hero">Hero Name:</label>
+    <input type="text" id="hero" name="hero" required>
+
+    <label for="creature">Mythical Creature:</label>
+    <input type="text" id="creature" name="creature" required>
+
+    <label for="weapon">Weapon:</label>
+    <input type="text" id="weapon" name="weapon" required>
+
+    <label for="place">Magical Place:</label>
+    <input type="text" id="place" name="place" required>
+
+    <label for="action">Action:</label>
+    <input type="text" id="action" name="action" required>
+
+    <button type="submit">Create Your Story</button>
+  </form>
+
+  <footer>
+    <p>Last updated: <span id="lastModified"></span></p>
+  </footer>
+
+  <script>
+    var x = document.lastModified;
+    document.getElementById('lastModified').textContent = x;
+  </script>
+</body>
+</html>
