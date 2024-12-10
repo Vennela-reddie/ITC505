@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lights Out Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Lights Out Game</h1>
+    <p>Click on the squares to toggle the lights. Turn all the lights off to win!</p>
+    <div id="game-board"></div>
+
+    <!-- Addendum Section -->
+    <section id="addendum">
+        <h2>About This Game</h2>
+        <p>
+            This interactive puzzle game challenges players to turn off all the lights on the board by clicking squares. 
+            Clicking a square toggles its light and those of its neighbors. The game is randomized to ensure each round is unique.
+        </p>
+    </section>
+
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+
+    <script>
+        document.getElementById('lastModified').textContent = document.lastModified;
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
